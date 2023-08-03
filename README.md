@@ -5,7 +5,7 @@ Welcome to the GitHub repository of my NASA Picture of the Day website. This pro
 
 ## 🌐 Live Demo
 
-Check out the live demo of the NASA Picture of the Day website ➡️ [Live Demo](http://apod-rahil1202.netlify.app/)
+Check out the live demo of the NASA Picture of the Day website ➡️ [Live Demo](https://apod-rahil1202.netlify.app/)
 
 ## 🚀 Features
 
