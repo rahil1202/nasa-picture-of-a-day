@@ -1,0 +1,321 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+  font-size: 62.5%;
+}
+
+body {  
+  max-height: 250vh;
+  padding: 15px;
+  background: url(../images/SC-APOD-bg3.webp) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+body *{
+  color: rgb(238, 234, 234);
+  font-family: 'Manrope', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  margin: 3.2rem 0;
+
+  text-align: center;
+}
+
+header a{
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-family: 'Lora', serif;
+  font-size: 3rem;
+}
+
+header a:hover{
+  text-decoration: none;
+}
+
+main {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main.center{
+  min-height: 80vh;
+}
+
+.bg-img-box{
+  margin: 1.5rem;
+  border-radius: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  max-width: 38rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);  
+}
+
+.bg-img-box span{
+  display: block;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+div h5{
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  text-align: center;
+
+  font-size: 1.3rem;
+  font-weight: 40;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-img-box li{
+  margin-right: 0.7rem;
+  width: 25%;
+}
+
+.bg-img-box img{
+  border-radius: 1.2rem;
+  width: 100%;
+}
+
+.after-click{
+  align-self: flex-start;
+}
+
+h1,
+h2{
+  font-family: 'Lora', serif;
+  font-size: 3.2rem;
+  text-decoration: underline;
+}
+
+h1{
+  margin-bottom: 0;
+}
+
+.media{
+  margin-top: 2rem;
+}
+
+.media img{
+  width: 100%;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.media iframe{
+  width: 100%;
+  height: 30rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.desc-text-box{
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 2.5rem 0;
+  padding: 2rem 1rem;
+  border-radius: 1.2rem;
+}
+
+h2{
+  font-size: 2.2rem;
+}
+
+.desc-text-box h2 + p{
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+section.before-click{
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);  
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 0.8rem;
+  border-radius: 1.2rem;
+}
+
+.today{
+  text-decoration: none;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5rem;
+  padding: 1.5rem 2.5rem;
+
+  color:rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+
+.today:hover{
+  color:rgb(255, 248, 248);
+  border: 0.2rem solid rgb(232, 230, 230);
+  
+  text-decoration: underline;
+}
+
+.another-date p{
+  color:rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.another-date input{
+  padding: 0.7rem;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+
+  font-size: 1.3rem;
+  color: #000;
+}
+
+.another-day{
+  text-decoration: none;
+
+  border: 0.1rem solid rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+
+  font-size: 1.35rem;
+}
+
+input + a:hover{
+  text-decoration: underline;
+  color:rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+footer{
+  margin: 2rem 0;
+}
+
+footer span{
+  display: block;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+footer span a{
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* After Clicking the get image button */
+.hidden{
+  display: none;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+@media screen and (min-width: 768px){
+  header,
+  main,
+  footer{
+    max-width: 85%;
+    margin: auto auto;
+  }
+  
+  header{
+    margin: 3% auto; 
+  }
+
+  .media iframe{    
+    height: 100%;
+  }
+
+  section.before-click{
+    max-width: 45rem;
+    padding: 5rem 2rem;
+  }
+
+  section.hidden{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  header,
+  main,
+  footer{
+    max-width: 90%;
+  }  
+
+  header a{
+    font-size: 3.5rem;
+  }
+
+  .after-click{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+
+    margin-bottom: 5rem;
+  }
+
+  .media{
+    width: 65%;
+  }
+
+  .desc-text-box{
+    max-width: 30%;
+    height: fit-content;
+    padding: auto 1.3rem;
+  }
+
+  span{
+    display: block;
+    font-size: 1.3rem;
+  }
+
+  h1,
+  h1 + span{
+    min-width: 100%;
+  }
+  
+  section.hidden{
+    display: none;
+  }
+
+  footer{
+    margin: 2.5rem auto 1rem;
+  }
+}

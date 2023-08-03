@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Your description goes here">
+	<meta name="keywords" content="one, two, three">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>APOD</title>
+
+	<!-- external CSS link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;900&family=Manrope:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<a href="#" class="logo">Astronomy Picture of the Day</a>
+	</header>
+
+	<main class="center">
+		<div class="bg-img-box">
+			<span>Don't like this background?</span>
+			<h5>Change Background Image</h5>
+			<ul>
+				<li><img class="bg-img1" src="images/SC-APOD-bg1.webp" alt=""></li>
+				<li><img class="bg-img2" src="images/SC-APOD-bg2.webp" alt=""></li>
+				<li><img class="bg-img3" src="images/SC-APOD-bg3.webp" alt=""></li>
+				<li><img class="bg-img4" src="images/SC-APOD-bg4.webp" alt=""></li>
+				<li><img class="bg-img5" src="images/SC-APOD-bg5.webp" alt=""></li>
+			</ul>
+		</div>
+
+		<section class="apod-parent">
+			<div class="after-click">
+
+			</div>
+		</section>
+
+		<section class="before-click center">
+			<a href="#" class="today get-img-btn">Get Today's APOD</a>
+
+			<div id="another-choice" class="another-date">
+				<p>View media for another day</p>
+				<label for="date">
+					<input type="date" id="date" data-placeholder="MM-DD-YYYY">
+
+					<a href="#" class="another-day get-img-btn">Get Media</a>
+				</label>
+			</div>
+		</section>
+	</main>
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
